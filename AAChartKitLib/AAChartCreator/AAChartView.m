@@ -693,18 +693,19 @@ WKScriptMessageHandler
 
 #if DEBUG
 + (NSString*)printPrettyPrintedJsonStringWithJsonObject:(id)jsonObject {
-    NSError *error = nil;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:jsonObject
-                                                       options:NSJSONWritingPrettyPrinted
-                                                         error:&error];
-    NSString *jsonStr =[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    NSLog(@"----------- console log AAOptions JSON information of AAChartView -----------:\n%@",jsonStr);
+//     NSError *error = nil;
+//     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:jsonObject
+//                                                        options:NSJSONWritingPrettyPrinted
+//                                                          error:&error];
+//     NSString *jsonStr =[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+//     NSLog(@"----------- console log AAOptions JSON information of AAChartView -----------:\n%@",jsonStr);
     
-    if (error) {
-        NSLog(@"❌❌❌ pretty printed JSONString with JSONObject serialization failed：%@", error);
-        return nil;
-    }
-    return jsonStr;
+//     if (error) {
+//         NSLog(@"❌❌❌ pretty printed JSONString with JSONObject serialization failed：%@", error);
+//         return nil;
+//     }
+//     return jsonStr;
+     return nil;
 }
 #endif
 
